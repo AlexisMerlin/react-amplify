@@ -4,6 +4,11 @@
             "corejs": 3.6,
             "useBuiltIns": "usage",
             "targets": "> 0.10%, not dead, ie >= 11"
-        }], "@babel/react"
+        }],
+        "@babel/react", ["@babel/preset-typescript", {
+            "corejs": 3.6,
+            "useBuiltIns": "usage",
+            "targets": "> 0.10%, not dead, ie >= 11"
+        }]
     ]
 }

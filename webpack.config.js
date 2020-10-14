@@ -16,15 +16,7 @@ module.exports = {
                 test: /\.(js|jsx|ts)$/,
                 use: {
                     loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            ["@babel/env", {
-                                "corejs": 3.6,
-                                "useBuiltIns": "usage",
-                                "targets": "> 0.10%, not dead, ie >= 11"
-                            }], "@babel/react"
-                        ]
-                    }
+
                 },
                 exclude: /node_modules/,
                 resolve: {

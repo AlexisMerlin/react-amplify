@@ -10,7 +10,7 @@ module.exports = {
         filename: 'bundle.[hash].js',
         path: path.resolve(__dirname, 'dist')
     },
-    mode: 'development',
+    mode: 'production',
     module: {
         rules: [{
                 test: /\.(js|jsx|ts)$/,
@@ -18,7 +18,7 @@ module.exports = {
                     loader: 'babel-loader',
 
                 },
-                exclude: /node_modules/,
+                exclude: /node_modules\/(?!^@aws)/,
                 resolve: {
                     extensions: ['.js', '.jsx', '.ts']
                 },

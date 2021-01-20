@@ -12,7 +12,8 @@
     "license": "ISC",
     "dependencies": {
         "@aws-amplify/ui-react": "^0.2.23",
-        "aws-amplify": "^3.3.3",
+        "@aws-amplify/auth": "^3.3.3",
+        "babel-polyfill": "^6.26.0",
         "core-js": "^3.6.5",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
@@ -31,5 +32,5 @@
         "webpack-cli": "^3.3.2",
         "webpack-dev-server": "^3.5.1"
     },
-    "browserslist": "> 0.10%, not dead, ie 11"
+    "browserslist": "> 0.10%, not dead, ie >= 11"
 }

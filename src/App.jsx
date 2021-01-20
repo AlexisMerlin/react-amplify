@@ -1,9 +1,9 @@
 import React from 'react'
 import Clock from './components/clock';
 import { withAuthenticator } from '@aws-amplify/ui-react'
-import {Amplify} from "aws-amplify";
+import {Auth} from "@aws-amplify/auth";
 import awsExports from "./aws-exports";
-Amplify.configure(awsExports);
+Auth.configure(awsExports);
 
 const App = () => {
     return (
